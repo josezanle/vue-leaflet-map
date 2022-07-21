@@ -58,7 +58,7 @@ onMounted(() => {
     L.popup()
       .setLatLng([lat, lng ])
       .setContent(`Lat: ${lat} <br /> Long: ${lng}`)
-      .openOn(map);
+      .openOn(map as any);
   }
 
   map.on('click', onMapClick);
